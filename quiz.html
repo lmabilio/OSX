@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<title>Quiz </title>
+	<link rel="stylesheet" href="estilo.css" type="text/css">
+	<link rel="icon" type="image/icos" href="imagens/icone.ico">
+	<script language="Javascript">
+	<!--
+	var nome1;
+	function confere()
+	{
+	  nome1 = document.getElementById("nome");
+	  aux= (nome1.value) + ' o seu resultado é:                                \n\n';
+	  score = 0;
+	  if(document.teste.Q1[2].checked)
+	  {
+		aux= aux + '   Questão 1: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 1: resposta errada. A opção correta é (c). \n'
+	  }
+	  if(document.teste.Q2[3].checked)
+	  {
+		aux= aux + '   Questão 2: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 2: resposta errada. A opção correta é (d). \n'
+	  }
+	  if(document.teste.Q3[1].checked)
+	  {
+		aux= aux + '   Questão 3: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 3: resposta errada. A opção correta é (b). \n'
+	  }
+	  if(document.teste.Q4[0].checked)
+	  {
+		aux= aux + '   Questão 4: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 4: resposta errada. A opção correta é (a). \n'
+	  }
+	  if(document.teste.Q5[0].checked)
+	  {
+		aux= aux + '   Questão 5: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 5: resposta errada. A opção correta é (a). \n'
+	  }
+	  if(document.teste.Q6[2].checked)
+	  {
+		aux= aux + '   Questão 6: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 6: resposta errada. A opção correta é (c). \n'
+	  }
+	  if(document.teste.Q7[1].checked)
+	  {
+		aux= aux + '   Questão 7: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 7: resposta errada. A opção correta é (b). \n'
+	  }
+	   if(document.teste.Q8[3].checked)
+	  {
+		aux= aux + '   Questão 8: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 8: resposta errada. A opção correta é (d). \n'
+	  }
+	  if(document.teste.Q9[2].checked)
+	  {
+		aux= aux + '   Questão 9: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 9: resposta errada. A opção correta é (c). \n'
+	  }
+	  if(document.teste.Q10[0].checked)
+	  {
+		aux= aux + '   Questão 10: resposta correta. \n'
+	    score = score + 1
+	  }
+	  else
+	  {
+		aux= aux + '   Questão 10: resposta errada. A opção correta é (a). \n'
+	  }  
+		  alert(aux + '\n\nVocê acertou ' + score + ' de 10 questões!' )
+	    return true;
+	}
+
+
+	// -->
+	</script>
+
+</head>
+<body id="principalquiz" class="fadeIn">
+
+	<div id="conteiner">
+
+		<div id="menu">
+			<nav  id="lista">
+				<ul>
+					<li><a href="home.html" target="_self">Home</a></li>
+					<li><a href="historico.html" target="_self">Histórico</a></li>
+					<li><a href="caracteristicas.html" target="_self">Características</a></li>
+
+					<li><a href="#" target="_self">Gerências</a>
+						<ul>
+							<li><a href="gerprocessos.html" target="_self">Gerência do Processador</a></li>
+							<li><a href="germemo.html" target="_self">Gerência de Memória</a></li>
+							<li><a href="gerio.html" target="_self">Gerência de Entrada e Saída</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#" target="_self">Processos</a>
+						<ul>
+							<li><a href="escprocessos.html" target="_self">Escalonador de Processos</a></li>
+							<li><a href="ths.html" target="_self">Threads</a></li>
+						</ul>
+					</li>
+					<li><a href="versoes.html" target="_self">Versões</a></li>
+					<li><a href="#" target="_self">Sistema de Arquivos</a>
+						<ul>
+							<li><a href="hfs.html" target="_self">HFS - Hierarchical File System</a></li>
+							<li><a href="ufs.html" target="_self">UFS - Unix File System</a></li>
+							<li><a href="nfs.html" target="_self">NFS - Network File System</a></li>
+						</ul>
+					</li>
+					<li><a href="quiz.html" target="_self">Quiz</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="quiz">
+			<form name="teste">
+				Agora queremos testar seu conhecimento sobre o conteúdo do site, ou seja, sobre o SO Mac OS:
+				<br>
+				<br>
+				<input type ="text" id ="nome" value="" maxLength="30" placeholder="Nome:" />
+				<br><br>
+				<b>1) Qual é o nome da interface gráfica de usuário? </b><br>
+				<input type="radio" name="Q1" value="0">a) Quartz<BR>
+				<input type="radio" name="Q1" value="1">b) Classic <br>
+				<input type="radio" name="Q1" value="2">c) Aqua<br>
+				<input type="radio" name="Q1" value="3">d) Cocoa<br>
+
+				<p>
+
+				<b>2) O Sistema Operacional Mac é baseado no kernel ________________?</b><br>
+				<input type="radio" name="Q2" value="0">a) Minix<BR>
+				<input type="radio" name="Q2" value="1">b) OpenGL<br>
+				<input type="radio" name="Q2" value="3">d) Hurd<br>
+				<input type="radio" name="Q2" value="2">c) OpenDarwin<br>
+
+				<p>
+
+				<b>3) Por que é considerado um kernel Híbrido</b><br>
+				<input type="radio" name="Q3" value="0">a) Pois baseia-se em cada uma das funções das camadas próprias.<BR>
+				<input type="radio" name="Q3" value="1">b) Por possuir diferentes partes (monolítico e microkernel) interagindo na utilização do sistema.<br>
+				<input type="radio" name="Q3" value="2">c) Pois desobrigam o administrador da mudança do kernel inteiro, sendo necessário apenas a instalação do novo módulo.<br>
+				<input type="radio" name="Q3" value="3">d) Por usar um sistema de numeração simples.<br>
+
+				<p>
+
+				<b>4) Escolha a alternativa que preencha corretamente os espeços: "Utiliza esquema de _______ protegida, que é reponsável por manter a integridade de ________. Com isso, o __________ aloca um único espaço na memória para cada programa aberto, e o programa não poderá interferir no ________ de outros. " </b><br>
+				<input type="radio" name="Q4" value="0">a) memoria, dados, sistema, espaço<BR>
+				<input type="radio" name="Q4" value="1">b) entrada/saída, informações, sistema, processo<br>
+				<input type="radio" name="Q4" value="2">c) memoria, informações, kernel, processo<br>
+				<input type="radio" name="Q4" value="3">d) entrada/saída, dados, kernel, espaço<br>
+
+				<p>
+
+				<b>5) O que é o I/O Kit? </b><br>
+				<input type="radio" name="Q5" value="0">a) Coleção de framaworks, bibliotecas, ferramentas e outros recursos para criaçao de drives de dispositivos.<BR>
+				<input type="radio" name="Q5" value="1">b) São várias modificações para o tratamento de interatividade.<br>
+				<input type="radio" name="Q5" value="2">c) São as bordas arredondadas, cores translúcidas e outros adereços.<br>
+				<input type="radio" name="Q5" value="3">d) É a combinação da interface amigável e o poder do núcleo open source.<br>
+
+				<p>
+				<b>6) Os processos são escalonados com base em:</b><br>
+				<input type="radio" name="Q6" value="0">a) Threads<BR>
+				<input type="radio" name="Q6" value="1">b) Aplicações do sistema<BR>
+				<input type="radio" name="Q6" value="2">c) Uma variante do algoritmo de multiplas filas com realimentação<br>
+				<input type="radio" name="Q6" value="3">d) Ciclos de clock<br>
+
+				<p>
+
+				<b>7) O que as Threads representam?</b><br>
+				<input type="radio" name="Q7" value="0">a) Um novo segmento.<BR>
+				<input type="radio" name="Q7" value="1">b) Um único caminho de execução através do código do aplicativo.<br>
+				<input type="radio" name="Q7" value="2">c) Uma entidade independente dentro do espaço.<br>
+				<input type="radio" name="Q7" value="3">d) Um único espaço na memória.<br>
+
+				<p>
+
+				<b>8) Sobre o funcionamento do HFS, complete: "Os arquivos são gerenciados em um sistemas de arquivos _________. O diretório raiz é o ___________. O disco rígido é organizado por ______, subpastas e _______."?</b><br>
+				<input type="radio" name="Q8" value="0">a) sequenciais, disco rígido, pastas, arquivos.<BR>
+				<input type="radio" name="Q8" value="1">b) hierárquicos, processador, nomes, arquivos<br>
+				<input type="radio" name="Q8" value="2">c) sequenciais, processador, nomes, registros<br>
+				<input type="radio" name="Q8" value="3">d) hierárquicos, disco rígido, pastas, arquivos<br>
+
+				<p>
+
+				<b>9) Como o UFS é hierárquico, como é distribuido os arquivos?</b><br>
+				<input type="radio" name="Q9" value="0">a) Em pastas aleatórias<br>
+				<input type="radio" name="Q9" value="1">b) Em pastas sequenciais<br>
+				<input type="radio" name="Q9" value="2">c) Em uma árvore de diretórios<br>
+				<input type="radio" name="Q9" value="3">d) Em várias ávores de diretórios diferentes<br>
+
+				<p>
+
+				<b>10) O que significa NFS? </b><br>
+				<input type="radio" name="Q10" value="0">a) Network File System<BR>
+				<input type="radio" name="Q10" value="1">b) Network Found System<br>
+				<input type="radio" name="Q10" value="2">c) Network File Service<br>
+				<input type="radio" name="Q10" value="3">d) Network Found Service<br>
+				<br>
+				<center><input onClick="confere();" type="BUTTON" value="Respostas">
+				</center>
+				<br>
+			</form>
+		</div>
+		<div id="footer">
+			<img src="imagens/footerpreto.png" id="imgfoot">
+		</div>
+	</div>
+</body>
+</html>
